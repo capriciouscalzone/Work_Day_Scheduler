@@ -13,6 +13,8 @@ $(".saveBtn").on("click", function() {
     localStorage.setItem(time, text);
 })
 
+$("#9inTheMorning .description").val(localStorage.getItem("9inTheMorning"));
+
 
 
 
