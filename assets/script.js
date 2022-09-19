@@ -14,6 +14,14 @@ $(".saveBtn").on("click", function() {
 })
 
 $("#9inTheMorning .description").val(localStorage.getItem("9inTheMorning"));
+$("#10inTheMorning .description").val(localStorage.getItem("10inTheMorning"));
+$("#11inTheMorning .description").val(localStorage.getItem("11inTheMorning"));
+$("#12inTheAfternoon .description").val(localStorage.getItem("12inTheAfternoon"));
+$("#1inTheAfternoon .description").val(localStorage.getItem("1inTheAfternoon"));
+$("#2inTheAfternoon .description").val(localStorage.getItem("2inTheAfternoon"));
+$("#3inTheAfternoon .description").val(localStorage.getItem("3inTheAfternoon"));
+$("#4inTheAfternoon .description").val(localStorage.getItem("4inTheAfternoon"));
+$("#5inTheAfternoon .description").val(localStorage.getItem("5inTheAfternoon"));
 
 
 
