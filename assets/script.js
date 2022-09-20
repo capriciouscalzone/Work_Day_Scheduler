@@ -58,7 +58,18 @@ function simpleCalendar () {
         let toDoInput7 = $('#input-field-7');
         let toDoInput8 = $('#input-field-8');
         let toDoInput9 = $('#input-field-9');
-        
+
+        let storedInput;
+
+
+        $(saveBtnId1).on('click', function(event) {
+            event.preventDefault();
+            let toDoInput1 = $('#input-field-1').val().trim();
+            localStorage.setItem('toDo1', (toDoInput1));
+        });
+        let savedInput1 = (localStorage.getItem('toDo1'));
+        toDoInput1.val(savedInput1);
+
 
     })
 }
