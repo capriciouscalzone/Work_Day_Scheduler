@@ -1,4 +1,4 @@
-function baseCalendar () {
+function simpleCalendar () {
     $(document).ready(function() {
         let momentVar = moment().format('ddd, MMM Do, YYY h:mm a');
         let workHours = ['9 a.m.', '10 a.m.','11 a.m.', '12 p.m.', '1 p.m.', '2 p.m.', '3 p.m.', '4 p.m.', '5 p.m.']
@@ -20,5 +20,14 @@ function baseCalendar () {
             $(row).append(timeCol).append(inputCol).append(saveBtn)
             $('#calendar').append(row);
         }
+
+        function addIdToInput() {
+            let inputId = document.getElementsByClassName('toDo-input');
+            let length = inputId.length;
+            for (i = 0; i < length; i++) {
+                inputId[i].id = "input-field-" + (i + 1);
+            }
+        };
+        addIdToInput();
     })
 }
