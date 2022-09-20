@@ -28,18 +28,23 @@ body {
   .time-block {
     text-align: center;
     border-radius: 15px;
+    width: 75%;
   }
   
   .row {
     white-space: pre-wrap;
     height: 80px;
     border-top: 1px solid white;
+    text-align: center;
   }
   
   .hour {
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
+    text-align: center;
+    width: 100px;
+    padding: 10px;
   }
   
   .past {
@@ -67,6 +72,6 @@ body {
   
   .saveBtn i:hover {
     font-size: 20px;
-    transition: all 0.3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   

@@ -1,10 +1,10 @@
 function simpleCalendar() {
     $(document).ready(function () {
         let momentVar = moment().format('dddd, MMM Do, YYY h:mm a');
-        let workHours = ['9 a.m.', '10 a.m.','11 a.m.', '12 p.m.', '1 p.m.', '2 p.m.', '3 p.m.', '4 p.m.', '5 p.m.']
+        let workHours = ["9 a.m.", "10 a.m.","11 a.m.", "12 p.m.", "1 p.m.", "2 p.m.", "3 p.m.", "4 p.m.", "5 p.m."]
 
         function currentDay() {
-            let currentDay = $('#currentDay'). text(momentVar);
+            let currentDay = $("#currentDay"). text(momentVar);
             return currentDay;
         }
 
@@ -13,16 +13,16 @@ function simpleCalendar() {
         let timeCol;
 
         for (i = 0; i < workHours.length; i++) {
-            let row = $("</div>").addClass('row');
-            let timeCol = $('<text-area>').text(workHours[i].addClass('hour'));
-            let inputCol = $('<input>').attr('placeholder','Note Goes Here').addClass('toDo-input time-block');
-            saveBtn = $('<button>').addClass("btn btn-primary saveBtn").text('save');
+            let row = $("<div>").addClass("row");
+            let timeCol = $("<text-area>").text(workHours[i]).addClass("hour");
+            let inputCol = $("<input>").attr("placeholder", "Enter note here").addClass("toDo-input time-block");
+            saveBtn = $("<button>").addClass("btn btn-primary saveBtn").text("save");
             $(row).append(timeCol).append(inputCol).append(saveBtn)
-            $('#calendar').append(row);
+            $("#calendar").append(row);
         }
 
         function addIdToInput() {
-            let inputId = document.getElementsByClassName('toDo-input');
+            let inputId = document.getElementsByClassName("toDo-input");
             let length = inputId.length;
             for (i = 0; i < length; i++) {
                 inputId[i].id = "input-field-" + (i + 1);
@@ -31,51 +31,51 @@ function simpleCalendar() {
         addIdToInput();
 
         function addIdToSaveBtn() {
-            let saveBtnId = document.getElementsByClassName('saveBtn');
+            let saveBtnId = document.getElementsByClassName("saveBtn");
             let length = saveBtnId.length;
-            for (i=0; i < length; i++) {
-                saveBtnId[i].id = "saveBtn-Id-" + (i = 1);
+            for (i = 0; i < length; i++) {
+                saveBtnId[i].id = "saveBtn-Id-" + (i + 1);
             }
         }
         addIdToSaveBtn();
 
-        let saveBtnId1 = $('saveBtn-Id-1');
-        let saveBtnId2 = $('saveBtn-Id-2');
-        let saveBtnId3 = $('saveBtn-Id-3');
-        let saveBtnId4 = $('saveBtn-Id-4');
-        let saveBtnId5 = $('saveBtn-Id-5');
-        let saveBtnId6 = $('saveBtn-Id-6');
-        let saveBtnId7 = $('saveBtn-Id-7');
-        let saveBtnId8 = $('saveBtn-Id-8');
-        let saveBtnId9 = $('saveBtn-Id-9');
+        let saveBtnId1 = $("#saveBtn-Id-1");
+        let saveBtnId2 = $("#saveBtn-Id-2");
+        let saveBtnId3 = $("#saveBtn-Id-3");
+        let saveBtnId4 = $("#saveBtn-Id-4");
+        let saveBtnId5 = $("#saveBtn-Id-5");
+        let saveBtnId6 = $("#saveBtn-Id-6");
+        let saveBtnId7 = $("#saveBtn-Id-7");
+        let saveBtnId8 = $("#saveBtn-Id-8");
+        let saveBtnId9 = $("#saveBtn-Id-9");
 
-        let toDoInput1 = $('#input-field-1');
-        let toDoInput2 = $('#input-field-2');
-        let toDoInput3 = $('#input-field-3');
-        let toDoInput4 = $('#input-field-4');
-        let toDoInput5 = $('#input-field-5');
-        let toDoInput6 = $('#input-field-6');
-        let toDoInput7 = $('#input-field-7');
-        let toDoInput8 = $('#input-field-8');
-        let toDoInput9 = $('#input-field-9');
+        let toDoInput1 = $("#input-field-1");
+        let toDoInput2 = $("#input-field-2");
+        let toDoInput3 = $("#input-field-3");
+        let toDoInput4 = $("#input-field-4");
+        let toDoInput5 = $("#input-field-5");
+        let toDoInput6 = $("#input-field-6");
+        let toDoInput7 = $("#input-field-7");
+        let toDoInput8 = $("#input-field-8");
+        let toDoInput9 = $("#input-field-9");
 
         let storedInput;
 
 
-        $(saveBtnId1).on('click', function(event) {
+        $(saveBtnId1).on("click", function(event) {
             event.preventDefault();
-            let toDoInput1 = $('#input-field-1').val().trim();
-            localStorage.setItem('toDo1', (toDoInput1));
+            let toDoInput1 = $("#input-field-1").val().trim();
+            localStorage.setItem("toDo1", (toDoInput1));
         });
-        let savedInput1 = (localStorage.getItem('toDo1'));
+        let savedInput1 = (localStorage.getItem("toDo1"));
         toDoInput1.val(savedInput1);
 
-        $(saveBtnId2).on('click', function(event) {
+        $(saveBtnId2).on("click", function(event) {
             event.preventDefault();
-            let toDoInput2 = $('#input-field-2').val().trim();
-            localStorage.setItem('toDo2', (toDoInput2));
+            let toDoInput2 = $("#input-field-2").val().trim();
+            localStorage.setItem("toDo2", (toDoInput2));
         });
-        let savedInput2 = (localStorage.getItem('toDo2'));
+        let savedInput2 = (localStorage.getItem("toDo2"));
         toDoInput2.val(savedInput2);
         $(saveBtnId3).on('click', function(event) {
             event.preventDefault();
@@ -84,28 +84,28 @@ function simpleCalendar() {
         });
         let savedInput3 = (localStorage.getItem('toDo3'));
         toDoInput3.val(savedInput3);
-        $(saveBtnId4).on('click', function(event) {
+        $(saveBtnId4).on("click", function(event) {
             event.preventDefault();
-            let toDoInput4 = $('#input-field-4').val().trim();
-            localStorage.setItem('toDo4', (toDoInput4));
+            let toDoInput4 = $("#input-field-4").val().trim();
+            localStorage.setItem("toDo4", (toDoInput4));
         });
-        let savedInput4 = (localStorage.getItem('toDo4'));
+        let savedInput4 = (localStorage.getItem("toDo4"));
         toDoInput4.val(savedInput4);
-        $(saveBtnId5).on('click', function(event) {
+        $(saveBtnId5).on("click", function(event) {
             event.preventDefault();
-            let toDoInput5 = $('#input-field-5').val().trim();
-            localStorage.setItem('toDo5', (toDoInput5));
+            let toDoInput5 = $("#input-field-5").val().trim();
+            localStorage.setItem("toDo5", (toDoInput5));
         });
-        let savedInput5 = (localStorage.getItem('toDo5'));
+        let savedInput5 = (localStorage.getItem("toDo5"));
         toDoInput5.val(savedInput5);
-        $(saveBtnId6).on('click', function(event) {
+        $(saveBtnId6).on("click", function(event) {
             event.preventDefault();
-            let toDoInput6 = $('#input-field-6').val().trim();
-            localStorage.setItem('toDo6', (toDoInput6));
+            let toDoInput6 = $("#input-field-6").val().trim();
+            localStorage.setItem("toDo6", (toDoInput6));
         });
-        let savedInput6 = (localStorage.getItem('toDo6'));
+        let savedInput6 = (localStorage.getItem("toDo6"));
         toDoInput6.val(savedInput6);
-        $(saveBtnId7).on('click', function(event) {
+        $(saveBtnId7).on("click", function(event) {
             event.preventDefault();
             let toDoInput7 = $('#input-field-7').val().trim();
             localStorage.setItem('toDo7', (toDoInput7));
@@ -114,18 +114,18 @@ function simpleCalendar() {
         toDoInput7.val(savedInput7);
         $(saveBtnId8).on('click', function(event) {
             event.preventDefault();
-            let toDoInput8 = $('#input-field-8').val().trim();
-            localStorage.setItem('toDo8', (toDoInput8));
+            let toDoInput8 = $("#input-field-8").val().trim();
+            localStorage.setItem("toDo8", (toDoInput8));
         });
-        let savedInput8 = (localStorage.getItem('toDo8'));
+        let savedInput8 = (localStorage.getItem("toDo8"));
         toDoInput8.val(savedInput8);
 
-        $(saveBtnId9).on('click', function(event) {
+        $(saveBtnId9).on("click", function(event) {
             event.preventDefault();
-            let toDoInput9 = $('#input-field-9').val().trim();
-            localStorage.setItem('toDo9', (toDoInput9));
+            let toDoInput9 = $("#input-field-9").val().trim();
+            localStorage.setItem("toDo9", (toDoInput9));
         });
-        let savedInput9 = (localStorage.getItem('toDo9'));
+        let savedInput9 = (localStorage.getItem("toDo9"));
         toDoInput9.val(savedInput9);
 
 
@@ -133,70 +133,70 @@ function simpleCalendar() {
 
         let now =new Date().getHours();
         if (now > 8) {
-            $('#input-field-0').addClass('past');
+            $("#input-field-0").addClass("past");
         } else if (now >= 8 && now < 9) {
-            $('#input-field-0').addClass('present'); 
+            $("#input-field-0").addClass("present"); 
         } else if (now < 8) {
-            $('#input-field-0').addClass('future');
+            $("#input-field-0").addClass("future");
 
         }
 
 
         if (now > 9) {
-            $('#input-field-1').addClass('past');
+            $("#input-field-1").addClass("past");
         } else if (now >= 9 && now < 10) {
-            $('#input-field-1').addClass('present'); 
+            $("#input-field-1").addClass("present"); 
         } else if (now < 9) {
-            $('#input-field-1').addClass('future');
+            $("#input-field-1").addClass("future");
         
         }
 
 
         if (now > 10) {
-            $('#input-field-2').addClass('past');
+            $("#input-field-2").addClass("past");
         } else if (now >= 10 && now < 11) {
-            $('#input-field-2').addClass('present'); 
+            $("#input-field-2").addClass("present"); 
         } else if (now < 10) {
-            $('#input-field-2').addClass('future');
+            $("#input-field-2").addClass("future");
         
         }
 
 
         if (now > 11) {
-            $('#input-field-3').addClass('past');
+            $("#input-field-3").addClass("past");
         } else if (now >= 11 && now < 12) {
-            $('#input-field-3').addClass('present'); 
+            $("#input-field-3").addClass("present"); 
         } else if (now < 11) {
-            $('#input-field-3').addClass('future');
+            $("#input-field-3").addClass("future");
         
         }
 
         if (now > 12) {
-            $('#input-field-4').addClass('past');
+            $("#input-field-4").addClass("past");
         } else if (now >= 12 && now < 13) {
-            $('#input-field-4').addClass('present'); 
+            $("#input-field-4").addClass("present"); 
         } else if (now < 12) {
-            $('#input-field-4').addClass('future');
+            $("#input-field-4").addClass("future");
         
         }
 
 
         if (now > 13) {
-            $('#input-field-5').addClass('past');
+            $("#input-field-5").addClass("past");
         } else if (now >= 13 && now < 14) {
-            $('#input-field-5').addClass('present'); 
+            $("#input-field-5").addClass("present"); 
         } else if (now < 13) {
-            $('#input-field-5').addClass('future');
+            $("#input-field-5").addClass("future");
         
         }
 
 
         if (now > 14) {
-            $('#input-field-6').addClass('past');
+            $("#input-field-6").addClass("past");
         } else if (now >= 14 && now < 15) {
-            $('#input-field-6').addClass('present'); 
+            $("#input-field-6").addClass("present"); 
         } else if (now < 14) {
-            $('#input-field-6').addClass('future');
+            $("#input-field-6").addClass("future");
         
         }
 
@@ -204,34 +204,34 @@ function simpleCalendar() {
 
 
         if (now > 15) {
-            $('#input-field-7').addClass('past');
+            $("#input-field-7").addClass("past");
         } else if (now >= 15 && now < 16) {
-            $('#input-field-7').addClass('present'); 
+            $("#input-field-7").addClass("present"); 
         } else if (now < 15) {
-            $('#input-field-7').addClass('future');
+            $("#input-field-7").addClass("future");
         
         }
 
         if (now > 16) {
-            $('#input-field-8').addClass('past');
+            $("#input-field-8").addClass("past");
         } else if (now >= 16 && now < 17) {
-            $('#input-field-8').addClass('present'); 
+            $("#input-field-8").addClass("present"); 
         } else if (now < 16) {
-            $('#input-field-8').addClass('future');
+            $("#input-field-8").addClass("future");
         
         }
 
 
 
         if (now > 17) {
-            $('#input-field-9').addClass('past');
+            $("#input-field-9").addClass("past");
         } else if (now >= 17 && now < 18) {
-            $('#input-field-9').addClass('present'); 
+            $("#input-field-9").addClass("present"); 
         } else if (now < 17) {
-            $('#input-field-9').addClass('future');
+            $("#input-field-9").addClass("future");
         
         }
 
-    })
+    });
 }
 simpleCalendar();
