@@ -16,6 +16,9 @@ function baseCalendar () {
             let row = $("</div>").addClass('row');
             let timeCol = $('<text-area>').text(workHours[i].addClass('hour'));
             let inputCol = $('<input>').attr('placeholder','Note Goes Here').addClass('toDo-input time-block');
+            saveBtn = $('<button>').addClass("btn btn-primary saveBtn").text('save');
+            $(row).append(timeCol).append(inputCol).append(saveBtn)
+            $('#calendar').append(row);
         }
     })
 }
