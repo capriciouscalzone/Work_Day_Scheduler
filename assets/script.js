@@ -28,5 +28,22 @@ $("#5inTheAfternoon .description").val(localStorage.getItem("5inTheAfternoon"));
 function trackingHours(){
 
     var currentHour = moment().hour();
+
+
+$(".time-block").each(function () {
+    var blockHour = parseInt($(this).attr("id").split("hour")[1]);
+    console.log(blockHour, currentHour)
+
+    if (blockHour < currentHour) {
+        $(this).addClass("past");
+        $(this).removeClass("future");
+        $(this).removeClass("present");
+    }
+})
+
+
+
+
+
 }
 })
