@@ -39,6 +39,18 @@ $(".time-block").each(function () {
         $(this).removeClass("future");
         $(this).removeClass("present");
     }
+    if (blockHour === currentHour) {
+        $(this).addClass("past");
+        $(this).removeClass("present");
+        $(this).removeClass("future");
+    }
+    else {
+        $(this).addClass("present");
+        $(this).removeClass("past");
+        $(this).removeClass("future");
+    }
+
+
 })
 
 
