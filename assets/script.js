@@ -12,7 +12,7 @@ function simpleCalendar () {
         let row;
         let timeCol;
 
-        for (i = 0; < workHours.length; i++) {
+        for (i = 0; i < workHours.length; i++) {
             let row = $("</div>").addClass('row');
             let timeCol = $('<text-area>').text(workHours[i].addClass('hour'));
             let inputCol = $('<input>').attr('placeholder','Note Goes Here').addClass('toDo-input time-block');
