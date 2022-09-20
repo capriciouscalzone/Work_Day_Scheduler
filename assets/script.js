@@ -129,5 +129,16 @@ function simpleCalendar () {
         toDoInput9.val(savedInput9);
 
 
+
+
+        let now =new Date().getHours();
+        if (now > 8) {
+            $('#input-field-0').addclass('past');
+        } else if (now >= 8 && now < 9) {
+            $('#input-field-0').addclass('present'); 
+        } else if (now < 8) {
+            $('#input-field-0').addclass('future');
+
+
     })
 }
