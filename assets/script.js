@@ -1,6 +1,6 @@
-function simpleCalendar () {
-    $(document).ready(function() {
-        let momentVar = moment().format('ddd, MMM Do, YYY h:mm a');
+function simpleCalendar() {
+    $(document).ready(function () {
+        let momentVar = moment().format('dddd, MMM Do, YYY h:mm a');
         let workHours = ['9 a.m.', '10 a.m.','11 a.m.', '12 p.m.', '1 p.m.', '2 p.m.', '3 p.m.', '4 p.m.', '5 p.m.']
 
         function currentDay() {
@@ -79,7 +79,7 @@ function simpleCalendar () {
         toDoInput2.val(savedInput2);
         $(saveBtnId3).on('click', function(event) {
             event.preventDefault();
-            let toDoInput1 = $('#input-field-3').val().trim();
+            let toDoInput3 = $('#input-field-3').val().trim();
             localStorage.setItem('toDo3', (toDoInput3));
         });
         let savedInput3 = (localStorage.getItem('toDo3'));
@@ -133,70 +133,70 @@ function simpleCalendar () {
 
         let now =new Date().getHours();
         if (now > 8) {
-            $('#input-field-0').addclass('past');
+            $('#input-field-0').addClass('past');
         } else if (now >= 8 && now < 9) {
-            $('#input-field-0').addclass('present'); 
+            $('#input-field-0').addClass('present'); 
         } else if (now < 8) {
-            $('#input-field-0').addclass('future');
+            $('#input-field-0').addClass('future');
 
         }
 
 
         if (now > 9) {
-            $('#input-field-1').addclass('past');
+            $('#input-field-1').addClass('past');
         } else if (now >= 9 && now < 10) {
-            $('#input-field-1').addclass('present'); 
+            $('#input-field-1').addClass('present'); 
         } else if (now < 9) {
-            $('#input-field-1').addclass('future');
+            $('#input-field-1').addClass('future');
         
         }
 
 
         if (now > 10) {
-            $('#input-field-2').addclass('past');
+            $('#input-field-2').addClass('past');
         } else if (now >= 10 && now < 11) {
-            $('#input-field-2').addclass('present'); 
+            $('#input-field-2').addClass('present'); 
         } else if (now < 10) {
-            $('#input-field-2').addclass('future');
+            $('#input-field-2').addClass('future');
         
         }
 
 
         if (now > 11) {
-            $('#input-field-3').addclass('past');
+            $('#input-field-3').addClass('past');
         } else if (now >= 11 && now < 12) {
-            $('#input-field-3').addclass('present'); 
+            $('#input-field-3').addClass('present'); 
         } else if (now < 11) {
-            $('#input-field-3').addclass('future');
+            $('#input-field-3').addClass('future');
         
         }
 
         if (now > 12) {
-            $('#input-field-4').addclass('past');
+            $('#input-field-4').addClass('past');
         } else if (now >= 12 && now < 13) {
-            $('#input-field-4').addclass('present'); 
+            $('#input-field-4').addClass('present'); 
         } else if (now < 12) {
-            $('#input-field-4').addclass('future');
+            $('#input-field-4').addClass('future');
         
         }
 
 
         if (now > 13) {
-            $('#input-field-5').addclass('past');
+            $('#input-field-5').addClass('past');
         } else if (now >= 13 && now < 14) {
-            $('#input-field-5').addclass('present'); 
+            $('#input-field-5').addClass('present'); 
         } else if (now < 13) {
-            $('#input-field-5').addclass('future');
+            $('#input-field-5').addClass('future');
         
         }
 
 
         if (now > 14) {
-            $('#input-field-6').addclass('past');
+            $('#input-field-6').addClass('past');
         } else if (now >= 14 && now < 15) {
-            $('#input-field-6').addclass('present'); 
+            $('#input-field-6').addClass('present'); 
         } else if (now < 14) {
-            $('#input-field-6').addclass('future');
+            $('#input-field-6').addClass('future');
         
         }
 
@@ -204,31 +204,31 @@ function simpleCalendar () {
 
 
         if (now > 15) {
-            $('#input-field-7').addclass('past');
+            $('#input-field-7').addClass('past');
         } else if (now >= 15 && now < 16) {
-            $('#input-field-7').addclass('present'); 
+            $('#input-field-7').addClass('present'); 
         } else if (now < 15) {
-            $('#input-field-7').addclass('future');
+            $('#input-field-7').addClass('future');
         
         }
 
         if (now > 16) {
-            $('#input-field-8').addclass('past');
+            $('#input-field-8').addClass('past');
         } else if (now >= 16 && now < 17) {
-            $('#input-field-8').addclass('present'); 
+            $('#input-field-8').addClass('present'); 
         } else if (now < 16) {
-            $('#input-field-8').addclass('future');
+            $('#input-field-8').addClass('future');
         
         }
 
 
 
         if (now > 17) {
-            $('#input-field-9').addclass('past');
+            $('#input-field-9').addClass('past');
         } else if (now >= 17 && now < 18) {
-            $('#input-field-9').addclass('present'); 
+            $('#input-field-9').addClass('present'); 
         } else if (now < 17) {
-            $('#input-field-9').addclass('future');
+            $('#input-field-9').addClass('future');
         
         }
 
