@@ -29,5 +29,14 @@ function simpleCalendar () {
             }
         };
         addIdToInput();
+
+        function addIdToSaveBtn() {
+            let saveBtnId = document.getElementsByClassName('saveBtn');
+            let length = saveBtnId.length;
+            for (i=0; i < length; i++) {
+                saveBtnId[i].id = "saveBtn-Id-" + (i = 1);
+            }
+        }
+        addIdToSaveBtn();
     })
 }
