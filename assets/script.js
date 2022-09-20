@@ -38,5 +38,16 @@ function simpleCalendar () {
             }
         }
         addIdToSaveBtn();
+
+        let saveBtnId1 = $('saveBtn-Id-1');
+        let saveBtnId2 = $('saveBtn-Id-2');
+        let saveBtnId3 = $('saveBtn-Id-3');
+        let saveBtnId4 = $('saveBtn-Id-4');
+        let saveBtnId5 = $('saveBtn-Id-5');
+        let saveBtnId6 = $('saveBtn-Id-6');
+        let saveBtnId7 = $('saveBtn-Id-7');
+        let saveBtnId8 = $('saveBtn-Id-8');
+        let saveBtnId9 = $('saveBtn-Id-9');
+
     })
 }
