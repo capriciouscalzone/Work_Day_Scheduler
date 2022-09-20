@@ -25,7 +25,8 @@ $("#5inTheAfternoon .description").val(localStorage.getItem("5inTheAfternoon"));
 
 
 
+function trackingHours(){
 
-
-
+    var currentHour = moment().hour();
+}
 })
