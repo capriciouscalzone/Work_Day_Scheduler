@@ -49,5 +49,16 @@ function simpleCalendar () {
         let saveBtnId8 = $('saveBtn-Id-8');
         let saveBtnId9 = $('saveBtn-Id-9');
 
+        let toDoInput1 = $('#input-field-1');
+        let toDoInput2 = $('#input-field-2');
+        let toDoInput3 = $('#input-field-3');
+        let toDoInput4 = $('#input-field-4');
+        let toDoInput5 = $('#input-field-5');
+        let toDoInput6 = $('#input-field-6');
+        let toDoInput7 = $('#input-field-7');
+        let toDoInput8 = $('#input-field-8');
+        let toDoInput9 = $('#input-field-9');
+        
+
     })
 }
