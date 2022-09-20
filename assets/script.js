@@ -139,6 +139,98 @@ function simpleCalendar () {
         } else if (now < 8) {
             $('#input-field-0').addclass('future');
 
+        }
+
+
+        if (now > 9) {
+            $('#input-field-1').addclass('past');
+        } else if (now >= 9 && now < 10) {
+            $('#input-field-1').addclass('present'); 
+        } else if (now < 9) {
+            $('#input-field-1').addclass('future');
+        
+        }
+
+
+        if (now > 10) {
+            $('#input-field-2').addclass('past');
+        } else if (now >= 10 && now < 11) {
+            $('#input-field-2').addclass('present'); 
+        } else if (now < 10) {
+            $('#input-field-2').addclass('future');
+        
+        }
+
+
+        if (now > 11) {
+            $('#input-field-3').addclass('past');
+        } else if (now >= 11 && now < 12) {
+            $('#input-field-3').addclass('present'); 
+        } else if (now < 11) {
+            $('#input-field-3').addclass('future');
+        
+        }
+
+        if (now > 12) {
+            $('#input-field-4').addclass('past');
+        } else if (now >= 12 && now < 13) {
+            $('#input-field-4').addclass('present'); 
+        } else if (now < 12) {
+            $('#input-field-4').addclass('future');
+        
+        }
+
+
+        if (now > 13) {
+            $('#input-field-5').addclass('past');
+        } else if (now >= 13 && now < 14) {
+            $('#input-field-5').addclass('present'); 
+        } else if (now < 13) {
+            $('#input-field-5').addclass('future');
+        
+        }
+
+
+        if (now > 14) {
+            $('#input-field-6').addclass('past');
+        } else if (now >= 14 && now < 15) {
+            $('#input-field-6').addclass('present'); 
+        } else if (now < 14) {
+            $('#input-field-6').addclass('future');
+        
+        }
+
+
+
+
+        if (now > 15) {
+            $('#input-field-7').addclass('past');
+        } else if (now >= 15 && now < 16) {
+            $('#input-field-7').addclass('present'); 
+        } else if (now < 15) {
+            $('#input-field-7').addclass('future');
+        
+        }
+
+        if (now > 16) {
+            $('#input-field-8').addclass('past');
+        } else if (now >= 16 && now < 17) {
+            $('#input-field-8').addclass('present'); 
+        } else if (now < 16) {
+            $('#input-field-8').addclass('future');
+        
+        }
+
+
+
+        if (now > 17) {
+            $('#input-field-9').addclass('past');
+        } else if (now >= 17 && now < 18) {
+            $('#input-field-9').addclass('present'); 
+        } else if (now < 17) {
+            $('#input-field-9').addclass('future');
+        
+        }
 
     })
 }
